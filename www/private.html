@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Page</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            color: #4a90e2;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Style for the button */
+        .home-button {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for the button */
+        .home-button:hover {
+            background-color: #357ab7;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to the Private Page</h1>
+<p id="welcome-message">Hello, User!</p>
+
+<!-- Back to Home button -->
+<a href="index.html" class="home-button">Back to Home</a>
+
+<script>
+    // Replace this with the actual username, e.g., fetched from a server or user input
+    const username = "John Doe";  // Example username
+
+    // Display the username in the welcome message
+    document.getElementById("welcome-message").innerText = `Hello, ${username}!`;
+</script>
+</body>
+</html>
